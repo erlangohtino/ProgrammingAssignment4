@@ -110,8 +110,8 @@ SummaryTotal<-select(total,-dataset)
 SummaryTotal<-slice_head(SummaryTotal,n=30*6)
 
 print("Creating tidy data set. Final table displayed on screen.")
-print("If you want to print final table to a file you can use write.csv")
-print("Example: write.csv(SummaryTotal,file='./data/SummaryTotal.csv')")
+print("If you want to print final table to a file you can use write.table")
+print("Example: write.table(SummaryTotal,file='./data/SummaryTotal.txt',row.name=FALSE)")
 # Now iterating to compute means per pair (subject,activity):
 for (subject in 1:30){
     for (ilabel in 1:6){
